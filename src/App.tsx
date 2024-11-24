@@ -55,7 +55,7 @@ function App() {
         </div>
       )}
 
-      {!loading && !error && (
+      {
         <div className="main-container">
           <h1>{`InstaScroll`}</h1>
           <div className="frames-container">
@@ -64,7 +64,7 @@ function App() {
             ))}
           </div>
         </div>
-      )}
+      }
       {loading && !error && (
         <div className="loading-container">
           <h3>{`loading...`}</h3>
